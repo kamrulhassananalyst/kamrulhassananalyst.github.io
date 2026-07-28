@@ -1,287 +1,773 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Mohammad Kamrul Hassan — Business Intelligence, Sales Analytics and MIS Reporting professional with 8+ years of experience." />
-  <meta property="og:title" content="Mohammad Kamrul Hassan | Business Intelligence & Sales Analytics" />
-  <meta property="og:description" content="Transforming sales and operational data into clear insights, automation and better business decisions." />
-  <meta property="og:type" content="website" />
-  <title>Mohammad Kamrul Hassan | BI, Sales Analytics & MIS</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Mohammad Kamrul Hassan — Business Sales & MIS Data Analyst, Business Intelligence & Automation Specialist, and Business Solution Developer.">
+  <meta name="theme-color" content="#07111f">
+  <meta property="og:title" content="Mohammad Kamrul Hassan | Business Intelligence & MIS Portfolio">
+  <meta property="og:description" content="Business-first analytics, automated MIS systems, executive dashboards and decision-ready intelligence.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/projects/web-bi-dashboard.webp">
+  <title>Mohammad Kamrul Hassan | Business Intelligence & MIS Portfolio</title>
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="progress" id="progress"></div>
+  <div class="page-progress" aria-hidden="true"><span id="pageProgress"></span></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
 
-  <header class="site-header" id="top">
-    <nav class="nav shell" aria-label="Primary navigation">
-      <a class="brand" href="#home" aria-label="Go to home">
+  <header class="site-header" id="siteHeader">
+    <div class="nav-shell">
+      <a class="brand" href="#home" aria-label="Kamrul Hassan home">
         <span class="brand-mark">KH</span>
-        <span>
-          <strong>Mohammad Kamrul Hassan</strong>
-          <small>BI • Sales Analytics • MIS</small>
+        <span class="brand-copy">
+          <strong>Kamrul Hassan</strong>
+          <small>Business Intelligence</small>
         </span>
       </a>
 
-      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navLinks">☰</button>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#career" class="nav-link">Career</a>
+        <a href="#impact" class="nav-link">Impact</a>
+        <a href="#solutions" class="nav-link">Solutions</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#recognition" class="nav-link">Recognition</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
 
-      <div class="nav-links" id="navLinks">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#career">Career</a>
-        <a href="#expertise">Expertise</a>
-        <a href="#projects">Projects</a>
-        <a href="#insights">Insights</a>
-        <a href="#contact">Contact</a>
+      <div class="nav-actions">
+        <a class="nav-cta" href="assets/documents/kamrul-hassan-resume.pdf" target="_blank" rel="noopener">Resume <span>↗</span></a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+          <span></span><span></span><span></span>
+        </button>
       </div>
+    </div>
 
-      <a class="button button-small desktop-cta" href="assets/Mohammad-Kamrul-Hassan-Resume.pdf" target="_blank" rel="noopener">Resume</a>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#career">Career Journey</a>
+      <a href="#impact">Business Impact</a>
+      <a href="#solutions">Solutions</a>
+      <a href="#projects">Projects & Media</a>
+      <a href="#recognition">Recognition</a>
+      <a href="#contact">Contact</a>
+      <a href="assets/documents/kamrul-hassan-resume.pdf" target="_blank" rel="noopener">Open Resume ↗</a>
     </nav>
   </header>
 
   <main>
-    <section class="hero section dark" id="home">
-      <div class="shell hero-grid">
+    <section class="hero section-dark" id="home">
+      <div class="hero-grid-bg" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-one" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-two" aria-hidden="true"></div>
+
+      <div class="container hero-layout">
         <div class="hero-copy reveal">
-          <p class="eyebrow">DATA DRIVEN. BUSINESS FOCUSED. RESULTS ORIENTED.</p>
-          <h1>Transforming sales data into <span>strategy, insight & profitable growth.</span></h1>
-          <p class="lead">
-            Business-focused MIS, BI and Sales Performance professional with 8+ years of experience across FMCG,
-            digital platforms, food & beverage and business operations.
+          <div class="eyebrow"><span></span> BUSINESS-FIRST ANALYTICS & AUTOMATION</div>
+          <h1>Turning business data into <em>decision-ready intelligence</em>, automated MIS systems and scalable solutions.</h1>
+          <p class="hero-intro">
+            I analyze business performance, build management reporting systems, automate data workflows and develop intelligence solutions that help leaders identify gaps, take action and support sustainable growth.
           </p>
+
+          <div class="role-stack" aria-label="Professional positioning">
+            <span>Business Sales & MIS Data Analyst</span>
+            <span>Business Intelligence & Automation Specialist</span>
+            <span>Business Solution Developer</span>
+          </div>
+
           <div class="hero-actions">
-            <a class="button" href="#projects">Explore My Work</a>
-            <a class="button button-ghost" href="#career">View Career Journey</a>
+            <a href="#projects" class="button button-primary">Explore My Solutions <span>↗</span></a>
+            <a href="#career" class="button button-ghost">View Career Journey <span>↓</span></a>
           </div>
-          <div class="social-row">
-            <a href="https://linkedin.com/in/kamrulhassananalyst" target="_blank" rel="noopener">LinkedIn</a>
-            <a href="mailto:kamrulhassan9355@gmail.com">Email</a>
-            <a href="https://wa.me/8801935555173" target="_blank" rel="noopener">WhatsApp</a>
+
+          <div class="hero-proof">
+            <div><strong>8+</strong><span>Years across analytics, operations & MIS</span></div>
+            <div><strong>3</strong><span>Major business environments</span></div>
+            <div><strong>2×</strong><span>Kormo Gold Award recognition</span></div>
           </div>
         </div>
 
-        <div class="hero-visual reveal">
-          <div class="portrait-wrap">
-            <img src="assets/kamrul-photo.jpg" alt="Mohammad Kamrul Hassan" />
-            <div class="experience-badge"><strong>8+</strong><span>Years Experience</span></div>
-          </div>
-          <div class="mini-dashboard" aria-label="Decorative business dashboard preview">
-            <div class="dash-top">
-              <span>Business Performance View</span>
-              <span class="live-dot">Portfolio Preview</span>
+        <div class="hero-visual reveal" data-delay="120">
+          <div class="portrait-stage">
+            <div class="portrait-frame">
+              <img src="assets/images/hero/kamrul-hassan-hero.webp" alt="Mohammad Kamrul Hassan in a professional office setting">
+              <div class="portrait-shine" aria-hidden="true"></div>
             </div>
-            <div class="kpi-row">
-              <div><small>Reporting Efficiency</small><strong>35–55%</strong></div>
-              <div><small>Manual Time Reduced</small><strong>30–45%</strong></div>
-              <div><small>Team Managed</small><strong>7</strong></div>
+
+            <div class="floating-card floating-card-top">
+              <span class="pulse-dot"></span>
+              <div><small>Current focus</small><strong>Sales MIS & Business Solutions</strong></div>
             </div>
-            <div class="chart-card">
-              <div class="bars" aria-hidden="true">
-                <i style="height:36%"></i><i style="height:52%"></i><i style="height:44%"></i>
-                <i style="height:67%"></i><i style="height:58%"></i><i style="height:82%"></i>
-                <i style="height:76%"></i><i style="height:94%"></i>
-              </div>
+
+            <div class="floating-card floating-card-bottom">
+              <span class="mini-chart" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+              <div><small>Business value</small><strong>Insights → Action → Growth</strong></div>
             </div>
+
+            <div class="visual-ring ring-one" aria-hidden="true"></div>
+            <div class="visual-ring ring-two" aria-hidden="true"></div>
           </div>
         </div>
       </div>
 
-      <div class="shell proof-strip reveal">
-        <div><strong>35–55%</strong><span>Reporting efficiency improvement</span></div>
-        <div><strong>30–45%</strong><span>Manual data collection time reduced</span></div>
-        <div><strong>31–49%</strong><span>Lead management efficiency improved</span></div>
-        <div><strong>29–35%</strong><span>Operational efficiency improved</span></div>
-      </div>
+      <a class="scroll-cue" href="#about" aria-label="Scroll to about section">
+        <span>Scroll to explore</span><i>↓</i>
+      </a>
     </section>
 
-    <section class="section" id="about">
-      <div class="shell split">
+    <section class="about section-light" id="about">
+      <div class="container">
         <div class="section-heading reveal">
-          <p class="eyebrow green">ABOUT ME</p>
-          <h2>I connect data, operations and management priorities.</h2>
+          <div class="eyebrow dark"><span></span> PROFESSIONAL POSITIONING</div>
+          <h2>More than reporting.<br><em>I connect data, systems and decisions.</em></h2>
+          <p>
+            My work sits at the intersection of business performance, sales operations, MIS, analytics and automation. The objective is not simply to display numbers—it is to create reliable visibility, reveal what needs attention and make management action faster.
+          </p>
         </div>
-        <div class="about-card reveal">
-          <p>
-            I specialize in converting sales and operational data into structured MIS reports, automated dashboards,
-            practical business insights and decision-ready recommendations.
-          </p>
-          <p>
-            My work supports Sales, Finance, Supply Chain, Planning, Audit, Operations and Management teams through
-            accurate reporting, KPI visibility, process improvement and cross-functional decision support.
-          </p>
-          <div class="pill-list">
-            <span>Sales Intelligence</span><span>MIS & KPI Reporting</span><span>Dashboard Automation</span>
-            <span>Commercial Analysis</span><span>CRM & Operations</span><span>Business Decision Support</span>
+
+        <div class="about-grid">
+          <article class="capability-card reveal">
+            <span class="cap-number">01</span>
+            <div class="cap-icon">A</div>
+            <h3>Analyze</h3>
+            <p>Sales, customer, SKU, region, channel, target, operational and financial performance—translated into gaps, trends, risks and opportunities.</p>
+            <ul class="clean-list">
+              <li>Target vs achievement</li>
+              <li>Primary & secondary sales</li>
+              <li>Root-cause business review</li>
+            </ul>
+          </article>
+
+          <article class="capability-card reveal" data-delay="80">
+            <span class="cap-number">02</span>
+            <div class="cap-icon">M</div>
+            <h3>Automate</h3>
+            <p>Reporting workflows that reduce repeated manual work, strengthen data discipline and keep management information current.</p>
+            <ul class="clean-list">
+              <li>Google Sheets & Apps Script</li>
+              <li>Power Query & structured MIS</li>
+              <li>Live reporting workflows</li>
+            </ul>
+          </article>
+
+          <article class="capability-card reveal" data-delay="160">
+            <span class="cap-number">03</span>
+            <div class="cap-icon">B</div>
+            <h3>Build</h3>
+            <p>Decision tools, dashboards, mobile business applications and MIS systems designed around real business processes—not presentation alone.</p>
+            <ul class="clean-list">
+              <li>Executive BI dashboards</li>
+              <li>Business applications</li>
+              <li>Management decision systems</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="tool-marquee reveal" aria-label="Tools and skills">
+          <div class="marquee-track">
+            <span>Power BI</span><i>✦</i><span>Advanced Excel</span><i>✦</i><span>Power Query</span><i>✦</i>
+            <span>Looker Studio</span><i>✦</i><span>Google Sheets</span><i>✦</i><span>Apps Script</span><i>✦</i>
+            <span>HubSpot CRM</span><i>✦</i><span>SQL Fundamentals</span><i>✦</i><span>Management Reporting</span><i>✦</i>
+            <span>Power BI</span><i>✦</i><span>Advanced Excel</span><i>✦</i><span>Power Query</span><i>✦</i>
+            <span>Looker Studio</span><i>✦</i><span>Google Sheets</span><i>✦</i><span>Apps Script</span><i>✦</i>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section soft" id="career">
-      <div class="shell">
-        <div class="section-heading centered reveal">
-          <p class="eyebrow green">CAREER JOURNEY</p>
-          <h2>Experience built across business, sales and operations.</h2>
-          <p>Click any role to view the contribution details.</p>
+    <section class="career section-ink" id="career">
+      <div class="container">
+        <div class="section-heading split reveal">
+          <div>
+            <div class="eyebrow"><span></span> CAREER JOURNEY</div>
+            <h2>Business experience shaped across <em>FMCG, digital platforms and operations.</em></h2>
+          </div>
+          <p>Each role expanded the scope—from customer operations and Google reporting, to nationwide business analysis, and now to sales MIS automation and value-added business applications.</p>
         </div>
 
         <div class="timeline">
-          <article class="timeline-item reveal open">
-            <button class="timeline-head" aria-expanded="true">
-              <span class="year">2025 — Present</span>
-              <span><strong>T.K. Group of Industries</strong><small>MIS & Sales Operations Analyst • FMCG</small></span>
-              <span class="plus">−</span>
-            </button>
-            <div class="timeline-body">
-              <p>Prepare daily, weekly, monthly and yearly sales MIS across region, area, territory, SKU, target achievement, primary/secondary sales, orders and expenses.</p>
-              <p>Built Google Forms, Google Sheets and Apps Script-based live reporting workflows and analyze performance gaps, slow-moving items and reporting issues.</p>
+          <article class="career-entry reveal">
+            <div class="timeline-marker"><span>NOW</span></div>
+            <div class="career-card">
+              <div class="career-topline">
+                <div>
+                  <span class="company-index">01 / CURRENT</span>
+                  <h3>T.K. Group of Industries</h3>
+                  <p class="designation">MIS & Sales Operations Analyst</p>
+                </div>
+                <div class="career-period">Oct 2025 — Present</div>
+              </div>
+
+              <div class="career-body">
+                <div class="career-copy">
+                  <p class="career-summary">Leading structured sales MIS, performance monitoring and business reporting while developing practical digital solutions that improve visibility across the sales operation.</p>
+
+                  <div class="career-columns">
+                    <div>
+                      <h4>Core responsibility</h4>
+                      <p>Daily, weekly, monthly and yearly sales MIS covering region, area, territory, SKU, target achievement, primary and secondary sales, orders and expenses.</p>
+                    </div>
+                    <div>
+                      <h4>Business contribution</h4>
+                      <p>Analyzing sales gaps, slow-moving products, customer and order performance, reporting exceptions and areas requiring management attention.</p>
+                    </div>
+                    <div>
+                      <h4>Established / improved</h4>
+                      <p>Google Forms, Google Sheets and Apps Script-based live reporting workflows, plus a new mobile intelligence solution for faster sales monitoring.</p>
+                    </div>
+                    <div>
+                      <h4>Tools used</h4>
+                      <p>Advanced Excel, Google Sheets, Google Forms, Apps Script, MIS reporting, sales analysis and business application design.</p>
+                    </div>
+                  </div>
+
+                  <div class="career-highlight">
+                    <span class="highlight-label">NEW VALUE ADD</span>
+                    <strong>PPL Business Intelligence & Sales Monitoring App — Developed by MIS Kamrul Hassan</strong>
+                    <p>A mobile business solution developed for T.K. Group to support sales visibility, target tracking, MIS access and faster management monitoring.</p>
+                    <a href="#ppl-app-project">View the solution <span>↗</span></a>
+                  </div>
+                </div>
+
+                <div class="career-media career-media-tk">
+                  <button class="media-tile media-tile-large" data-lightbox="assets/images/projects/ppl-bi-sales-monitoring-app.webp" data-caption="PPL Business Intelligence & Sales Monitoring App — developed as a value-added solution for T.K. Group.">
+                    <img src="assets/images/projects/ppl-bi-sales-monitoring-app.webp" alt="PPL BI Dashboard mobile application login screen" loading="lazy">
+                    <span>Open app preview</span>
+                  </button>
+                  <button class="media-tile" data-lightbox="assets/images/career/tk-group/monthly-sales-review.webp" data-caption="Monthly sales review presentation at T.K. Group.">
+                    <img src="assets/images/career/tk-group/monthly-sales-review.webp" alt="Monthly sales review presentation at T.K. Group" loading="lazy">
+                  </button>
+                  <button class="media-tile" data-lightbox="assets/images/career/tk-group/tk-business-work.webp" data-caption="Sales reporting and business monitoring context at T.K. Group.">
+                    <img src="assets/images/career/tk-group/tk-business-work.webp" alt="T.K. Group sales reporting work setup" loading="lazy">
+                  </button>
+                </div>
+              </div>
             </div>
           </article>
 
-          <article class="timeline-item reveal">
-            <button class="timeline-head" aria-expanded="false">
-              <span class="year">2022 — 2025</span>
-              <span><strong>ACI Formulations PLC</strong><small>Senior Business Development Analyst • FMCG</small></span>
-              <span class="plus">+</span>
-            </button>
-            <div class="timeline-body">
-              <p>Analyzed nationwide primary/secondary sales, channel movement, product trends and target achievement to identify growth gaps and business risks.</p>
-              <p>Developed Power BI, Looker Studio, Excel and Google Workspace dashboards, reducing manual reporting effort by 35%–55%.</p>
+          <article class="career-entry reveal">
+            <div class="timeline-marker"><span>02</span></div>
+            <div class="career-card">
+              <div class="career-topline">
+                <div>
+                  <span class="company-index">02 / FMCG</span>
+                  <h3>ACI Formulations PLC</h3>
+                  <p class="designation">Senior Business Development Analyst</p>
+                </div>
+                <div class="career-period">Nov 2022 — Apr 2025</div>
+              </div>
+
+              <div class="career-body">
+                <div class="career-copy">
+                  <p class="career-summary">Supported nationwide business performance through sales and commercial analysis, automated dashboards, planning support and cross-functional management reporting.</p>
+
+                  <div class="career-columns">
+                    <div>
+                      <h4>Core responsibility</h4>
+                      <p>Nationwide primary and secondary sales, region and channel movement, product trends, target achievement, incentive and foreign-trip eligibility analysis.</p>
+                    </div>
+                    <div>
+                      <h4>Business contribution</h4>
+                      <p>Identified growth gaps, business risks and performance opportunities while supporting pricing, trade offers, demand planning and management reviews.</p>
+                    </div>
+                    <div>
+                      <h4>Key impact</h4>
+                      <p>Resume-reported 35%–55% improvement in reporting efficiency through automated dashboards, structured MIS and faster consolidation workflows.</p>
+                    </div>
+                    <div>
+                      <h4>Tools used</h4>
+                      <p>Power BI, Looker Studio, Advanced Excel, Power Query, Google Workspace and management reporting systems.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="career-media career-media-aci">
+                  <button class="media-tile media-tile-wide" data-lightbox="assets/images/career/aci/annual-business-conference-presentation.webp" data-caption="Presenting business performance at the ACI Annual Business Conference 2023.">
+                    <img src="assets/images/career/aci/annual-business-conference-presentation.webp" alt="Kamrul presenting at ACI Annual Business Conference" loading="lazy">
+                    <span>Annual Business Conference</span>
+                  </button>
+                  <button class="media-tile" data-lightbox="assets/images/career/aci/annual-business-conference-portrait.webp" data-caption="Professional participation at the ACI Annual Business Conference 2023.">
+                    <img src="assets/images/career/aci/annual-business-conference-portrait.webp" alt="Kamrul at ACI Annual Business Conference 2023" loading="lazy">
+                  </button>
+                  <button class="media-tile" data-lightbox="assets/images/career/aci/aci-recognition.webp" data-caption="Professional recognition and team engagement at ACI.">
+                    <img src="assets/images/career/aci/aci-recognition.webp" alt="Professional recognition at ACI" loading="lazy">
+                  </button>
+                </div>
+              </div>
             </div>
           </article>
 
-          <article class="timeline-item reveal">
-            <button class="timeline-head" aria-expanded="false">
-              <span class="year">2017 — 2022</span>
-              <span><strong>Kormo Jobs by Google</strong><small>Operations & Business Data Analyst • Digital Platform</small></span>
-              <span class="plus">+</span>
-            </button>
-            <div class="timeline-body">
-              <p>Led analytics support across operations, marketing campaigns, billing, job matching, CRM activity and customer/candidate tracking.</p>
-              <p>Managed a 7-member team and improved operational efficiency by 29%–35% and CRM/lead management efficiency by 31%–49%.</p>
+          <article class="career-entry reveal">
+            <div class="timeline-marker"><span>03</span></div>
+            <div class="career-card">
+              <div class="career-topline">
+                <div>
+                  <span class="company-index">03 / DIGITAL PLATFORM</span>
+                  <h3>Kormo Jobs</h3>
+                  <p class="designation">Customer Experience Manager — Operations & Business Data Analytics</p>
+                </div>
+                <div class="career-period">Sep 2017 — Jun 2022</div>
+              </div>
+
+              <div class="career-body">
+                <div class="career-copy">
+                  <p class="career-summary"><strong>Kormo Jobs — a Google product, working through Google’s local partner.</strong> Managed customer experience and team operations while owning analytics, CRM visibility and most weekly reporting to Google.</p>
+
+                  <div class="career-columns">
+                    <div>
+                      <h4>Core responsibility</h4>
+                      <p>Operations, marketing campaigns, job matching, billing, CRM activity, customer and candidate tracking, and business performance monitoring.</p>
+                    </div>
+                    <div>
+                      <h4>Business contribution</h4>
+                      <p>Prepared regular reporting for Google and management, strengthened process discipline and translated operational activity into measurable visibility.</p>
+                    </div>
+                    <div>
+                      <h4>Key impact</h4>
+                      <p>Managed a seven-member team; resume-reported improvements of 29%–35% in operational efficiency and 31%–49% in CRM and lead-management efficiency.</p>
+                    </div>
+                    <div>
+                      <h4>Tools used</h4>
+                      <p>Google Data Studio, HubSpot CRM, Google Sheets, Google Forms, Apps Script-supported workflows and executive reporting.</p>
+                    </div>
+                  </div>
+
+                  <a class="evidence-link" href="assets/documents/google-kormo-experience-certificate.pdf" target="_blank" rel="noopener">Open Google experience certificate <span>↗</span></a>
+                </div>
+
+                <div class="career-media career-media-kormo">
+                  <button class="media-tile media-tile-wide" data-lightbox="assets/images/recognition/google-kormo-experience-certificate.webp" data-caption="Experience letter confirming Kamrul Hassan’s work for Kormo Jobs through Google’s local partner.">
+                    <img src="assets/images/recognition/google-kormo-experience-certificate.webp" alt="Google Kormo experience certificate" loading="lazy">
+                    <span>Google experience evidence</span>
+                  </button>
+                  <button class="media-tile" data-lightbox="assets/images/career/kormo/kormo-gold-award-q2-2020.webp" data-caption="Kormo Gold Award — 2nd Quarter 2020.">
+                    <img src="assets/images/career/kormo/kormo-gold-award-q2-2020.webp" alt="Kormo Gold Award second quarter 2020" loading="lazy">
+                  </button>
+                  <button class="media-tile" data-lightbox="assets/images/career/kormo/kormo-gold-award-q4-2020.webp" data-caption="Kormo Gold Award — 4th Quarter 2020.">
+                    <img src="assets/images/career/kormo/kormo-gold-award-q4-2020.webp" alt="Kormo Gold Award fourth quarter 2020" loading="lazy">
+                  </button>
+                </div>
+              </div>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="expertise">
-      <div class="shell">
-        <div class="section-heading reveal">
-          <p class="eyebrow green">EXPERTISE</p>
-          <h2>Business understanding supported by practical technology.</h2>
-        </div>
-
-        <div class="expertise-grid">
-          <article class="expertise-card reveal"><span>01</span><h3>Sales & Commercial Intelligence</h3><p>Target vs achievement, primary/secondary sales, region, area, channel and SKU review.</p></article>
-          <article class="expertise-card reveal"><span>02</span><h3>MIS & Executive Reporting</h3><p>KPI monitoring, management reports, incentives, ranking and decision-support summaries.</p></article>
-          <article class="expertise-card reveal"><span>03</span><h3>Dashboard & Automation</h3><p>Power BI, Looker Studio, Advanced Excel, Power Query, Google Sheets and Apps Script.</p></article>
-          <article class="expertise-card reveal"><span>04</span><h3>Planning & Business Analysis</h3><p>Demand planning support, pricing, trade offers, performance gaps and root-cause analysis.</p></article>
-          <article class="expertise-card reveal"><span>05</span><h3>CRM & Data Quality</h3><p>Lead tracking, workflow monitoring, data cleaning, reporting discipline and accuracy.</p></article>
-          <article class="expertise-card reveal"><span>06</span><h3>Cross-functional Support</h3><p>Decision support for Sales, Finance, Operations, Supply Chain, Planning, Audit and Management.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section dark" id="projects">
-      <div class="shell">
-        <div class="section-heading reveal">
-          <p class="eyebrow">SELECTED WORK</p>
-          <h2>Projects presented as business case studies—not only screenshots.</h2>
-          <p>More real projects will be added after the remaining files and links are shared.</p>
-        </div>
-
-        <div class="filter-row reveal" role="tablist" aria-label="Project categories">
-          <button class="filter active" data-filter="all">All</button>
-          <button class="filter" data-filter="webapp">Web App</button>
-          <button class="filter" data-filter="powerbi">Power BI</button>
-          <button class="filter" data-filter="google">Google Automation</button>
-          <button class="filter" data-filter="excel">Excel / MIS</button>
-        </div>
-
-        <div class="project-grid">
-          <article class="project-card reveal" data-category="webapp">
-            <div class="project-visual webapp-visual">
-              <div class="mock-sidebar"></div>
-              <div class="mock-content"><i></i><i></i><i></i><span></span></div>
-            </div>
-            <div class="project-body">
-              <div class="project-tags"><span>Web App</span><span>BI</span><span>Demo</span></div>
-              <h3>Consumer Brands / FMCG BI Live Dashboard</h3>
-              <p>Sales performance, P&L, product/category analysis, data modeling and management-level KPI visibility.</p>
-              <a href="https://tinyurl.com/kamrul-consumer-bi" target="_blank" rel="noopener">Open Live Demo ↗</a>
-            </div>
-          </article>
-
-          <article class="project-card reveal" data-category="google">
-            <div class="project-visual google-visual">
-              <div class="flow"><b>Form</b><span>→</span><b>Sheet</b><span>→</span><b>Apps Script</b><span>→</span><b>Live MIS</b></div>
-            </div>
-            <div class="project-body">
-              <div class="project-tags"><span>Google Sheets</span><span>Apps Script</span></div>
-              <h3>Live Sales Reporting Workflow</h3>
-              <p>Structured workflow for primary/secondary sales tracking, faster consolidation and real-time business visibility.</p>
-              <button class="text-button" disabled>Detailed case study will be added after source files are shared</button>
-            </div>
-          </article>
-
-          <article class="project-card reveal" data-category="powerbi excel">
-            <div class="project-visual powerbi-visual">
-              <div class="donut"></div><div class="mini-bars"><i></i><i></i><i></i><i></i><i></i></div>
-            </div>
-            <div class="project-body">
-              <div class="project-tags"><span>Power BI</span><span>Excel</span><span>Looker Studio</span></div>
-              <h3>Sales Performance & Management Reporting</h3>
-              <p>Nationwide sales, target achievement, channel movement, incentive and executive reporting for decision support.</p>
-              <button class="text-button" disabled>Actual dashboard preview will be added from your files</button>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="insights">
-      <div class="shell">
+    <section class="impact section-light" id="impact">
+      <div class="container">
         <div class="section-heading centered reveal">
-          <p class="eyebrow green">DATA STORYTELLING</p>
-          <h2>From reporting to action.</h2>
-          <p>Each final case study will follow this management-focused decision path.</p>
+          <div class="eyebrow dark"><span></span> BUSINESS IMPACT</div>
+          <h2>Designed for <em>visibility, control and action.</em></h2>
+          <p>Impact is presented only where supported by the resume or uploaded professional evidence. No artificial achievements have been added.</p>
         </div>
-        <div class="insight-flow reveal">
-          <div><span>01</span><strong>What happened?</strong><p>Measure actual performance and identify the exception.</p></div>
-          <b>→</b>
-          <div><span>02</span><strong>Why did it happen?</strong><p>Analyze root causes across market, product, stock and execution.</p></div>
-          <b>→</b>
-          <div><span>03</span><strong>What should happen next?</strong><p>Recommend priorities, owners, timelines and follow-up KPIs.</p></div>
+
+        <div class="impact-grid">
+          <article class="impact-card impact-card-dark reveal">
+            <span class="impact-kicker">Professional scale</span>
+            <strong class="impact-number" data-counter="8">8+</strong>
+            <h3>Years of cross-functional business experience</h3>
+            <p>Spanning digital operations, FMCG business development, sales analytics, MIS reporting and business solution development.</p>
+          </article>
+
+          <article class="impact-card reveal" data-delay="60">
+            <span class="impact-kicker">Reporting efficiency</span>
+            <strong class="impact-number">35–55%</strong>
+            <h3>Resume-reported improvement</h3>
+            <p>Through automated dashboards, structured MIS formats and faster data-consolidation workflows.</p>
+          </article>
+
+          <article class="impact-card reveal" data-delay="120">
+            <span class="impact-kicker">Manual data collection</span>
+            <strong class="impact-number">30–45%</strong>
+            <h3>Resume-reported reduction</h3>
+            <p>Using Google Forms, Google Sheets and Apps Script-based reporting automation.</p>
+          </article>
+
+          <article class="impact-card reveal" data-delay="180">
+            <span class="impact-kicker">Leadership</span>
+            <strong class="impact-number">7</strong>
+            <h3>Team members managed</h3>
+            <p>With improved follow-up discipline, workflow monitoring and operational performance visibility.</p>
+          </article>
+        </div>
+
+        <div class="decision-loop reveal">
+          <div class="loop-core">Business<br>Growth</div>
+          <div class="loop-step"><span>01</span><strong>Collect</strong><small>Structured, reliable data</small></div>
+          <div class="loop-step"><span>02</span><strong>Analyze</strong><small>Gaps, trends and causes</small></div>
+          <div class="loop-step"><span>03</span><strong>Visualize</strong><small>Decision-ready clarity</small></div>
+          <div class="loop-step"><span>04</span><strong>Act</strong><small>Management priorities</small></div>
         </div>
       </div>
     </section>
 
-    <section class="section soft" id="contact">
-      <div class="shell contact-panel reveal">
-        <div>
-          <p class="eyebrow green">LET'S CONNECT</p>
-          <h2>Turn business data into clearer decisions.</h2>
-          <p>Open to relevant opportunities, professional collaboration and business analytics discussions.</p>
+    <section class="solutions section-sand" id="solutions">
+      <div class="container">
+        <div class="section-heading split reveal">
+          <div>
+            <div class="eyebrow dark"><span></span> BUSINESS SOLUTIONS</div>
+            <h2>Capabilities built around <em>real management needs.</em></h2>
+          </div>
+          <p>From sales monitoring to workflow automation, each solution is designed to improve business understanding, reporting speed and management control.</p>
         </div>
-        <div class="contact-actions">
-          <a class="button" href="mailto:kamrulhassan9355@gmail.com">Send Email</a>
-          <a class="button button-outline" href="https://wa.me/8801935555173" target="_blank" rel="noopener">WhatsApp</a>
-          <a class="button button-outline" href="assets/Mohammad-Kamrul-Hassan-Resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+
+        <div class="solution-bento">
+          <article class="solution-card solution-feature reveal">
+            <span class="solution-tag">01 / INTELLIGENCE</span>
+            <h3>Sales Performance Intelligence</h3>
+            <p>Primary and secondary sales, target achievement, region, area, channel, customer, product and SKU performance—reviewed through a business lens.</p>
+            <div class="mini-dashboard" aria-hidden="true">
+              <div class="mini-kpi"><span>Target</span><i>84%</i></div>
+              <div class="mini-bars"><b></b><b></b><b></b><b></b><b></b></div>
+              <div class="mini-line"><svg viewBox="0 0 220 65" role="presentation"><polyline points="0,50 36,42 72,46 108,25 145,31 180,12 220,18"/></svg></div>
+            </div>
+          </article>
+
+          <article class="solution-card reveal" data-delay="60">
+            <span class="solution-tag">02 / MIS</span>
+            <h3>Management Reporting Systems</h3>
+            <p>Daily to annual MIS, KPI packs, business reviews, rankings, incentives, exceptions and executive decision summaries.</p>
+            <ul class="solution-list">
+              <li>Consistent reporting logic</li>
+              <li>Clear exception visibility</li>
+              <li>Management-ready structure</li>
+            </ul>
+          </article>
+
+          <article class="solution-card reveal" data-delay="120">
+            <span class="solution-tag">03 / AUTOMATION</span>
+            <h3>Google Workspace Automation</h3>
+            <p>Forms, Sheets and Apps Script workflows that streamline collection, validation, follow-up and live reporting.</p>
+            <div class="automation-flow"><span>Form</span><i>→</i><span>Sheet</span><i>→</i><span>Script</span><i>→</i><span>BI</span></div>
+          </article>
+
+          <article class="solution-card reveal" data-delay="60">
+            <span class="solution-tag">04 / BI</span>
+            <h3>Executive Dashboards</h3>
+            <p>Power BI and Looker Studio solutions designed for management performance monitoring, analysis and drill-down.</p>
+            <div class="skill-meter"><span>Data model</span><i><b style="--level:92%"></b></i></div>
+            <div class="skill-meter"><span>Business logic</span><i><b style="--level:94%"></b></i></div>
+            <div class="skill-meter"><span>Decision design</span><i><b style="--level:90%"></b></i></div>
+          </article>
+
+          <article class="solution-card solution-wide reveal" data-delay="120">
+            <span class="solution-tag">05 / BUSINESS APPLICATIONS</span>
+            <div>
+              <h3>Practical tools that move intelligence closer to the user.</h3>
+              <p>Mobile business applications and web dashboards that make critical information easier to access, monitor and act upon.</p>
+            </div>
+            <a href="#ppl-app-project" class="text-link">See the PPL solution <span>↗</span></a>
+          </article>
         </div>
       </div>
+    </section>
+
+    <section class="projects section-dark" id="projects">
+      <div class="container">
+        <div class="section-heading split reveal">
+          <div>
+            <div class="eyebrow"><span></span> SELECTED PROJECTS</div>
+            <h2>Business intelligence that moves from <em>data to action.</em></h2>
+          </div>
+          <p>Each project is presented as a business solution—with the problem, approach, output and management value made clear.</p>
+        </div>
+
+        <article class="project-feature reveal">
+          <div class="project-visual dashboard-frame">
+            <img src="assets/images/projects/web-bi-dashboard.webp" alt="Consumer Brands web business intelligence dashboard" loading="lazy">
+            <div class="browser-bar"><span></span><span></span><span></span><small>Executive BI workspace</small></div>
+            <button class="play-button" data-video="assets/videos/web-bi-automation-showcase.mp4" data-poster="assets/images/video-posters/web-bi-automation-poster.webp" data-video-title="Automated Web BI Dashboard Showcase" aria-label="Play Web BI dashboard video">
+              <i>▶</i><span>Watch project walkthrough</span>
+            </button>
+          </div>
+          <div class="project-copy">
+            <span class="project-number">01 / FLAGSHIP SOLUTION</span>
+            <h3>Consumer Brands / FMCG Business Intelligence Web Dashboard</h3>
+            <p class="project-lead">A management-level web intelligence solution for reviewing sales performance, profitability, product and category movement, regional trends and business risk indicators.</p>
+            <div class="project-meta">
+              <div><small>Business need</small><strong>One decision view across performance areas</strong></div>
+              <div><small>Solution</small><strong>Web BI dashboard with automated data workflow</strong></div>
+              <div><small>Management value</small><strong>Faster review, clearer exceptions and drill-down</strong></div>
+              <div><small>Technology</small><strong>Google Sheets, Apps Script, HTML/CSS/JS, BI logic</strong></div>
+            </div>
+            <div class="tag-row"><span>Sales</span><span>P&L</span><span>Region</span><span>Product</span><span>Risk</span></div>
+            <button class="button button-outline" data-video="assets/videos/web-bi-automation-showcase.mp4" data-poster="assets/images/video-posters/web-bi-automation-poster.webp" data-video-title="Automated Web BI Dashboard Showcase">Open Video Case Study <span>↗</span></button>
+          </div>
+        </article>
+
+        <article class="project-feature project-feature-reverse reveal" id="ppl-app-project">
+          <div class="project-visual app-stage">
+            <div class="phone-mockup">
+              <div class="phone-speaker"></div>
+              <img src="assets/images/projects/ppl-bi-sales-monitoring-app.webp" alt="PPL Business Intelligence and Sales Monitoring App" loading="lazy">
+              <div class="phone-home"></div>
+            </div>
+            <div class="app-float app-float-one"><small>Built for</small><strong>T.K. Group</strong></div>
+            <div class="app-float app-float-two"><small>Solution type</small><strong>Mobile Sales BI</strong></div>
+          </div>
+          <div class="project-copy">
+            <span class="project-number">02 / T.K. GROUP VALUE ADD</span>
+            <h3>PPL Business Intelligence & Sales Monitoring App — Developed by MIS Kamrul Hassan</h3>
+            <p class="project-lead">A new value-added mobile business solution developed for T.K. Group to bring sales intelligence, target monitoring and MIS access closer to business users.</p>
+            <div class="project-meta">
+              <div><small>Business need</small><strong>Accessible sales performance visibility</strong></div>
+              <div><small>Solution</small><strong>Mobile-first business intelligence application</strong></div>
+              <div><small>Management value</small><strong>Faster monitoring and more convenient MIS access</strong></div>
+              <div><small>Positioning</small><strong>Developed as a new business value contribution</strong></div>
+            </div>
+            <div class="tag-row"><span>T.K. Group</span><span>PPL</span><span>Sales MIS</span><span>Mobile BI</span></div>
+            <button class="button button-outline" data-lightbox="assets/images/projects/ppl-bi-sales-monitoring-app.webp" data-caption="PPL Business Intelligence & Sales Monitoring App — a value-added solution developed for T.K. Group by MIS Kamrul Hassan.">View Full App Screen <span>↗</span></button>
+          </div>
+        </article>
+
+        <article class="project-feature reveal">
+          <div class="project-visual dashboard-frame">
+            <img src="assets/images/projects/advanced-power-bi-executive.webp" alt="Advanced Power BI executive analytics dashboard" loading="lazy">
+            <div class="browser-bar"><span></span><span></span><span></span><small>Power BI executive model</small></div>
+            <button class="play-button" data-video="assets/videos/advanced-power-bi-showcase.mp4" data-poster="assets/images/video-posters/advanced-power-bi-poster.webp" data-video-title="Advanced Power BI Showcase" aria-label="Play advanced Power BI video">
+              <i>▶</i><span>Watch Power BI walkthrough</span>
+            </button>
+          </div>
+          <div class="project-copy">
+            <span class="project-number">03 / ADVANCED POWER BI</span>
+            <h3>End-to-End Data Model, DAX & Executive Analytics</h3>
+            <p class="project-lead">A multi-view Power BI solution covering executive, sales, marketing, finance and supply-chain perspectives with advanced calculations and data relationships.</p>
+            <div class="project-meta">
+              <div><small>Analysis scope</small><strong>Executive, sales, finance and operations</strong></div>
+              <div><small>Technical depth</small><strong>Data model, DAX and interactive filters</strong></div>
+              <div><small>Decision value</small><strong>Cross-functional performance visibility</strong></div>
+              <div><small>Output</small><strong>Interactive dashboards and structured analytics</strong></div>
+            </div>
+            <div class="tag-row"><span>Power BI</span><span>DAX</span><span>Data Model</span><span>Finance</span><span>Supply Chain</span></div>
+            <div class="inline-actions">
+              <button class="button button-outline" data-video="assets/videos/advanced-power-bi-showcase.mp4" data-poster="assets/images/video-posters/advanced-power-bi-poster.webp" data-video-title="Advanced Power BI Showcase">Watch Video <span>↗</span></button>
+              <button class="text-button" data-lightbox="assets/images/projects/power-bi-data-model.webp" data-caption="Power BI data model and relationship architecture.">View data model</button>
+            </div>
+          </div>
+        </article>
+
+        <div class="project-cards">
+          <article class="project-card reveal">
+            <button class="project-card-image" data-lightbox="assets/images/projects/power-bi-sales-dashboard.webp" data-caption="Power BI sales dashboard with KPI, target and performance views.">
+              <img src="assets/images/projects/power-bi-sales-dashboard.webp" alt="Power BI sales dashboard" loading="lazy">
+              <span>Open dashboard</span>
+            </button>
+            <div>
+              <span class="project-number">04 / SALES ANALYTICS</span>
+              <h3>Sales Performance & Target Dashboard</h3>
+              <p>Sales KPIs, target achievement, ranking and performance visibility for structured management review.</p>
+              <div class="tag-row"><span>Power BI</span><span>Sales KPI</span><span>Target</span></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-delay="80">
+            <button class="project-card-image" data-lightbox="assets/images/projects/power-bi-sales-overview.webp" data-caption="Management sales overview dashboard with trend and category performance analysis.">
+              <img src="assets/images/projects/power-bi-sales-overview.webp" alt="Power BI management sales overview" loading="lazy">
+              <span>Open dashboard</span>
+            </button>
+            <div>
+              <span class="project-number">05 / MANAGEMENT REPORTING</span>
+              <h3>Management Sales Review System</h3>
+              <p>A consolidated performance view supporting sales review, product understanding and management discussion.</p>
+              <div class="tag-row"><span>Business Review</span><span>Trend</span><span>Product</span></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="showcase-head reveal">
+          <div>
+            <span class="project-number">DASHBOARDS / MEDIA SHOWCASE</span>
+            <h3>Evidence from projects, presentations and business environments.</h3>
+          </div>
+          <div class="showcase-controls">
+            <button id="showcasePrev" aria-label="Previous showcase items">←</button>
+            <button id="showcaseNext" aria-label="Next showcase items">→</button>
+          </div>
+        </div>
+
+        <div class="filter-row reveal" role="group" aria-label="Showcase filters">
+          <button class="filter-button active" data-filter="all">All</button>
+          <button class="filter-button" data-filter="dashboard">Dashboards</button>
+          <button class="filter-button" data-filter="career">Career</button>
+          <button class="filter-button" data-filter="recognition">Recognition</button>
+        </div>
+
+        <div class="showcase-track reveal" id="showcaseTrack">
+          <button class="showcase-item" data-category="dashboard" data-lightbox="assets/images/projects/advanced-power-bi-dax.webp" data-caption="Advanced Power BI report with business logic and analytical calculations.">
+            <img src="assets/images/projects/advanced-power-bi-dax.webp" alt="Advanced Power BI DAX dashboard" loading="lazy">
+            <span><small>Dashboard</small>Advanced BI & DAX</span>
+          </button>
+          <button class="showcase-item" data-category="dashboard" data-lightbox="assets/images/projects/advanced-power-bi-executive.webp" data-caption="Advanced executive Power BI dashboard.">
+            <img src="assets/images/projects/advanced-power-bi-executive.webp" alt="Advanced executive Power BI dashboard" loading="lazy">
+            <span><small>Dashboard</small>Executive Analytics</span>
+          </button>
+          <button class="showcase-item" data-category="dashboard" data-lightbox="assets/images/projects/power-bi-data-model.webp" data-caption="Power BI table relationship and data-model architecture.">
+            <img src="assets/images/projects/power-bi-data-model.webp" alt="Power BI data model" loading="lazy">
+            <span><small>Technical</small>Data Model Architecture</span>
+          </button>
+          <button class="showcase-item" data-category="career" data-lightbox="assets/images/career/aci/annual-business-conference-presentation.webp" data-caption="Business performance presentation at ACI Annual Business Conference 2023.">
+            <img src="assets/images/career/aci/annual-business-conference-presentation.webp" alt="ACI business conference presentation" loading="lazy">
+            <span><small>ACI</small>Business Conference</span>
+          </button>
+          <button class="showcase-item" data-category="career" data-lightbox="assets/images/career/aci/annual-business-conference-portrait.webp" data-caption="Professional participation at the ACI Annual Business Conference 2023.">
+            <img src="assets/images/career/aci/annual-business-conference-portrait.webp" alt="ACI conference portrait" loading="lazy">
+            <span><small>ACI</small>Professional Engagement</span>
+          </button>
+          <button class="showcase-item" data-category="career" data-lightbox="assets/images/career/aci/aci-recognition.webp" data-caption="Team engagement and professional recognition at ACI.">
+            <img src="assets/images/career/aci/aci-recognition.webp" alt="ACI professional recognition" loading="lazy">
+            <span><small>ACI</small>Team Recognition</span>
+          </button>
+          <button class="showcase-item" data-category="career" data-lightbox="assets/images/career/tk-group/monthly-sales-review.webp" data-caption="Monthly sales review presentation at T.K. Group.">
+            <img src="assets/images/career/tk-group/monthly-sales-review.webp" alt="T.K. Group monthly sales review" loading="lazy">
+            <span><small>T.K. Group</small>Monthly Sales Review</span>
+          </button>
+          <button class="showcase-item" data-category="career" data-lightbox="assets/images/career/tk-group/tk-business-work.webp" data-caption="Business reporting and sales monitoring work context at T.K. Group.">
+            <img src="assets/images/career/tk-group/tk-business-work.webp" alt="T.K. Group reporting environment" loading="lazy">
+            <span><small>T.K. Group</small>Business Monitoring</span>
+          </button>
+          <button class="showcase-item" data-category="recognition" data-lightbox="assets/images/career/kormo/kormo-gold-award-q2-2020.webp" data-caption="Kormo Gold Award — 2nd Quarter 2020.">
+            <img src="assets/images/career/kormo/kormo-gold-award-q2-2020.webp" alt="Kormo Gold Award Q2 2020" loading="lazy">
+            <span><small>Kormo</small>Gold Award — Q2</span>
+          </button>
+          <button class="showcase-item" data-category="recognition" data-lightbox="assets/images/career/kormo/kormo-gold-award-q4-2020.webp" data-caption="Kormo Gold Award — 4th Quarter 2020.">
+            <img src="assets/images/career/kormo/kormo-gold-award-q4-2020.webp" alt="Kormo Gold Award Q4 2020" loading="lazy">
+            <span><small>Kormo</small>Gold Award — Q4</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="recognition section-light" id="recognition">
+      <div class="container">
+        <div class="section-heading split reveal">
+          <div>
+            <div class="eyebrow dark"><span></span> RECOGNITION & CREDENTIALS</div>
+            <h2>Professional evidence that supports the <em>career story.</em></h2>
+          </div>
+          <p>Experience, awards and learning credentials are shown with their original titles and context—without overstating what they represent.</p>
+        </div>
+
+        <div class="recognition-grid">
+          <article class="recognition-card recognition-feature reveal">
+            <button data-lightbox="assets/images/recognition/google-kormo-experience-certificate.webp" data-caption="Google experience letter for work supporting Kormo Jobs through Google’s local partner.">
+              <img src="assets/images/recognition/google-kormo-experience-certificate.webp" alt="Google Kormo experience certificate" loading="lazy">
+              <span class="view-chip">View certificate</span>
+            </button>
+            <div>
+              <span class="recognition-type">EXPERIENCE EVIDENCE</span>
+              <h3>Google / Kormo Experience Certificate</h3>
+              <p>Confirms service as Customer Experience Manager for Google’s local partner supporting Kormo Jobs, with responsibility for team management and most weekly reporting to Google.</p>
+              <a href="assets/documents/google-kormo-experience-certificate.pdf" target="_blank" rel="noopener">Open original PDF ↗</a>
+            </div>
+          </article>
+
+          <article class="recognition-card reveal" data-delay="60">
+            <button data-lightbox="assets/images/career/kormo/kormo-gold-award-q2-2020.webp" data-caption="Kormo Gold Award — 2nd Quarter 2020.">
+              <img src="assets/images/career/kormo/kormo-gold-award-q2-2020.webp" alt="Kormo Gold Award second quarter 2020" loading="lazy">
+              <span class="view-chip">View award</span>
+            </button>
+            <div><span class="recognition-type">RECOGNITION</span><h3>Kormo Gold Award</h3><p>2nd Quarter 2020</p></div>
+          </article>
+
+          <article class="recognition-card reveal" data-delay="100">
+            <button data-lightbox="assets/images/career/kormo/kormo-gold-award-q4-2020.webp" data-caption="Kormo Gold Award — 4th Quarter 2020.">
+              <img src="assets/images/career/kormo/kormo-gold-award-q4-2020.webp" alt="Kormo Gold Award fourth quarter 2020" loading="lazy">
+              <span class="view-chip">View award</span>
+            </button>
+            <div><span class="recognition-type">RECOGNITION</span><h3>Kormo Gold Award</h3><p>4th Quarter 2020</p></div>
+          </article>
+
+          <article class="recognition-card reveal" data-delay="140">
+            <button data-lightbox="assets/images/recognition/business-intelligence-certificate.webp" data-caption="The Business Intelligence Analyst Course 2022 certificate.">
+              <img src="assets/images/recognition/business-intelligence-certificate.webp" alt="Business Intelligence Analyst course certificate" loading="lazy">
+              <span class="view-chip">View certificate</span>
+            </button>
+            <div>
+              <span class="recognition-type">BUSINESS INTELLIGENCE</span>
+              <h3>The Business Intelligence Analyst Course 2022</h3>
+              <p>Udemy / 365 Careers</p>
+              <a href="assets/documents/business-intelligence-certificate.pdf" target="_blank" rel="noopener">Open original PDF ↗</a>
+            </div>
+          </article>
+
+          <article class="recognition-card reveal" data-delay="180">
+            <button data-lightbox="assets/images/recognition/looker-studio-certificate.webp" data-caption="Google Data Studio — Master the Advanced Concepts certificate.">
+              <img src="assets/images/recognition/looker-studio-certificate.webp" alt="Google Data Studio advanced concepts certificate" loading="lazy">
+              <span class="view-chip">View certificate</span>
+            </button>
+            <div>
+              <span class="recognition-type">LOOKER STUDIO</span>
+              <h3>Google Data Studio — Master the Advanced Concepts</h3>
+              <p>Udemy certificate of completion</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section-dark" id="contact">
+      <div class="contact-grid-bg" aria-hidden="true"></div>
+      <div class="container contact-layout">
+        <div class="contact-copy reveal">
+          <div class="eyebrow"><span></span> LET'S CONNECT</div>
+          <h2>Looking for someone who can connect <em>business, data and execution?</em></h2>
+          <p>I am open to opportunities and professional conversations involving Business Intelligence, MIS, sales analytics, reporting automation and practical business solution development.</p>
+          <div class="contact-actions">
+            <a class="button button-primary" href="mailto:kamrulhassan9355@gmail.com">Start a Conversation <span>↗</span></a>
+            <a class="button button-ghost" href="assets/documents/kamrul-hassan-resume.pdf" target="_blank" rel="noopener">Download Resume <span>↓</span></a>
+          </div>
+        </div>
+
+        <div class="contact-panel reveal" data-delay="120">
+          <div class="contact-row">
+            <small>Email</small>
+            <a href="mailto:kamrulhassan9355@gmail.com">kamrulhassan9355@gmail.com</a>
+            <button class="copy-email" data-copy="kamrulhassan9355@gmail.com" aria-label="Copy email address">Copy</button>
+          </div>
+          <div class="contact-row">
+            <small>LinkedIn</small>
+            <a href="https://www.linkedin.com/in/kamrulhassananalyst" target="_blank" rel="noopener">linkedin.com/in/kamrulhassananalyst ↗</a>
+          </div>
+          <div class="contact-row">
+            <small>Location</small>
+            <span>Dhaka, Bangladesh</span>
+          </div>
+          <div class="contact-row">
+            <small>Specialization</small>
+            <span>Business Sales & MIS Data Analysis<br>BI, Automation & Business Solutions</span>
+          </div>
+        </div>
+      </div>
+
+      <footer class="site-footer container">
+        <div class="brand footer-brand">
+          <span class="brand-mark">KH</span>
+          <span class="brand-copy"><strong>Kamrul Hassan</strong><small>Business Intelligence Portfolio</small></span>
+        </div>
+        <p>© <span id="currentYear"></span> Mohammad Kamrul Hassan. Built around verified professional evidence.</p>
+        <a href="#home">Back to top ↑</a>
+      </footer>
     </section>
   </main>
 
-  <footer>
-    <div class="shell footer-row">
-      <span>© <span id="year"></span> Mohammad Kamrul Hassan</span>
-      <span>Dhaka, Bangladesh</span>
+  <div class="modal" id="mediaModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-dialog">
+      <button class="modal-close" data-close-modal aria-label="Close media viewer">×</button>
+      <div class="modal-content" id="modalContent"></div>
+      <div class="modal-caption" id="modalTitle"></div>
     </div>
-  </footer>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">Email copied</div>
 
   <script src="script.js"></script>
 </body>
