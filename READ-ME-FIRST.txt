@@ -1,0 +1,39 @@
+KAMRUL PORTFOLIO — PREMIUM FIX UPDATE GUIDE (EASY BANGLA)
+
+আপনার text, number, career data এবং project content change করা হয়নি।
+শুধু hero photo presentation, mobile layout, floating movement, extra layer এবং popup improve করা হয়েছে।
+
+সবচেয়ে সহজ update method:
+
+1. `kamrul-portfolio-premium-fix-update-only.zip` file Extract করুন।
+2. Extract করলে এই ৩টি file পাবেন:
+   - index.html
+   - styles.css
+   - script.js
+3. GitHub repository খুলুন:
+   https://github.com/kamrulhassananalyst/kamrulhassananalyst.github.io
+4. `Add file` চাপুন।
+5. `Upload files` চাপুন।
+6. Extract করা ৩টি file একসঙ্গে GitHub upload box-এ drag and drop করুন।
+7. একই নামের পুরোনো files replace হবে — এটি ঠিক আছে।
+8. Commit message লিখুন:
+   Premium mobile hero and portrait upgrade
+9. `Commit directly to the main branch` selected রাখুন।
+10. Green `Commit changes` button চাপুন।
+11. `Actions` tab-এ latest `pages build and deployment` green check হওয়া পর্যন্ত অপেক্ষা করুন।
+12. Final website খুলুন:
+    https://kamrulhassananalyst.github.io/
+13. পুরোনো design দেখালে mobile browser refresh করুন অথবা Incognito mode-এ খুলুন।
+
+এই update-এর পরে:
+- Profile photo-এর ওপর কোনো floating text/card থাকবে না
+- Face সম্পূর্ণ clear থাকবে
+- দুইটি existing card photo-এর নিচে side-aligned floating motion করবে
+- Extra premium capability layer থাকবে
+- Photo বা “Open portrait” button click করলে popup খুলবে
+- Popup image-এ আবার click করলে zoom in / zoom out হবে
+- Desktop-এ subtle premium portrait movement থাকবে
+- Existing text, data এবং numbers অপরিবর্তিত থাকবে
+
+Backup:
+পুরোনো final ZIP এবং নতুন full ZIP—দুটিই Google Drive/OneDrive-এ রেখে দিন।

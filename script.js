@@ -116,6 +116,10 @@
       const image = document.createElement("img");
       image.src = src;
       image.alt = caption || "Portfolio media preview";
+      image.classList.add("modal-zoomable");
+      image.addEventListener("click", () => {
+        image.classList.toggle("zoomed");
+      });
       modalContent.appendChild(image);
     }
 
@@ -222,6 +226,27 @@
     });
     document.documentElement.addEventListener("mouseleave", () => {
       glow.style.opacity = "0";
+    });
+  }
+
+
+  const premiumPortrait = document.querySelector(".premium-portrait-stage .portrait-frame");
+  if (
+    premiumPortrait &&
+    !prefersReducedMotion &&
+    window.matchMedia("(hover: hover) and (pointer: fine)").matches
+  ) {
+    premiumPortrait.addEventListener("pointermove", (event) => {
+      const rect = premiumPortrait.getBoundingClientRect();
+      const px = (event.clientX - rect.left) / rect.width - 0.5;
+      const py = (event.clientY - rect.top) / rect.height - 0.5;
+      premiumPortrait.style.setProperty("--portrait-ry", `${px * 2.4}deg`);
+      premiumPortrait.style.setProperty("--portrait-rx", `${py * -2.0}deg`);
+    });
+
+    premiumPortrait.addEventListener("pointerleave", () => {
+      premiumPortrait.style.setProperty("--portrait-ry", "0deg");
+      premiumPortrait.style.setProperty("--portrait-rx", "0deg");
     });
   }
 
