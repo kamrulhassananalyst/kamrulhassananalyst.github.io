@@ -16,6 +16,65 @@
 
   document.getElementById("currentYear").textContent = new Date().getFullYear();
 
+  // Career history and the current resume are maintained in one easy-to-edit JSON file.
+  const escapeHTML = (value = "") => String(value).replace(/[&<>"']/g, (char) => ({
+    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+  }[char]));
+
+  const formatCareerDate = (value) => {
+    if (!value) return "Present";
+    const [year, month] = value.split("-").map(Number);
+    return new Date(year, month - 1, 1).toLocaleDateString("en-US", { month: "short", year: "numeric" });
+  };
+
+  const updateExperienceYears = (startDate) => {
+    if (!startDate) return;
+    const start = new Date(`${startDate}T00:00:00`);
+    const now = new Date();
+    let years = now.getFullYear() - start.getFullYear();
+    if (now.getMonth() < start.getMonth() || (now.getMonth() === start.getMonth() && now.getDate() < start.getDate())) years--;
+    const label = `${Math.max(0, years)}+`;
+    document.querySelectorAll("[data-experience-years]").forEach((node) => { node.textContent = label; });
+    const counter = document.querySelector("[data-counter]");
+    if (counter) counter.dataset.counter = String(Math.max(0, years));
+  };
+
+  const renderCareer = (career) => {
+    const timeline = document.getElementById("careerTimeline");
+    if (!timeline || !Array.isArray(career.companies)) return;
+    timeline.innerHTML = career.companies.map((job, index) => {
+      const current = !job.end;
+      const marker = current ? "NOW" : String(index + 1).padStart(2, "0");
+      const category = (job.category || "CAREER").toLowerCase().replace(/[^a-z0-9]+/g, "-");
+      const mediaClass = index === 0 ? "career-media-tk" : index === 1 ? "career-media-aci" : "career-media-kormo";
+      const details = (job.details || []).map((item) => `<div><h4>${escapeHTML(item.title)}</h4><p>${escapeHTML(item.text)}</p></div>`).join("");
+      const highlight = job.highlight ? `<div class="career-highlight"><span class="highlight-label">${escapeHTML(job.highlight.label)}</span><strong>${escapeHTML(job.highlight.title)}</strong><p>${escapeHTML(job.highlight.text)}</p>${job.highlight.link ? `<a href="${escapeHTML(job.highlight.link)}">${escapeHTML(job.highlight.linkText || "View details")} <span>↗</span></a>` : ""}</div>` : "";
+      const evidence = job.evidence ? `<a class="evidence-link" href="${escapeHTML(job.evidence.href)}" target="_blank" rel="noopener">${escapeHTML(job.evidence.text)} <span>↗</span></a>` : "";
+      const media = (job.media || []).map((item, mediaIndex) => {
+        const tileClass = `media-tile${item.wide ? " media-tile-wide" : ""}${index === 0 && mediaIndex === 0 ? " media-tile-large" : ""}`;
+        return `<button class="${tileClass}" type="button" data-lightbox="${escapeHTML(item.src)}" data-caption="${escapeHTML(item.caption || item.alt || "Career image")}"><img src="${escapeHTML(item.src)}" alt="${escapeHTML(item.alt || "Career image")}" loading="lazy">${item.label ? `<span>${escapeHTML(item.label)}</span>` : ""}</button>`;
+      }).join("");
+      return `<article class="career-entry reveal visible"><div class="timeline-marker"><span>${marker}</span></div><div class="career-card"><div class="career-topline"><div><span class="company-index">${String(index + 1).padStart(2, "0")} / ${escapeHTML(job.category || "CAREER")}</span><h3>${escapeHTML(job.company)}</h3><p class="designation">${escapeHTML(job.designation)}</p></div><div class="career-period">${formatCareerDate(job.start)} — ${formatCareerDate(job.end)}</div></div><div class="career-body"><div class="career-copy"><p class="career-summary">${escapeHTML(job.summary)}</p><div class="career-columns">${details}</div>${highlight}${evidence}</div><div class="career-media ${mediaClass}">${media}</div></div></div></article>`;
+    }).join("");
+    document.querySelectorAll("[data-resume-link]").forEach((link) => {
+      link.href = career.resumeFile || "assets/documents/resume.pdf";
+    });
+    if (career.profileImage) {
+      document.querySelectorAll("[data-profile-image]").forEach((image) => {
+        image.src = career.profileImage;
+      });
+      document.querySelectorAll("[data-profile-lightbox]").forEach((trigger) => {
+        trigger.dataset.lightbox = career.profileImage;
+      });
+    }
+    updateExperienceYears(career.experienceStart);
+  };
+
+  fetch("data/career.json")
+    .then((response) => { if (!response.ok) throw new Error("Career data unavailable"); return response.json(); })
+    .then(renderCareer)
+    .catch((error) => console.warn("Portfolio career data could not be loaded:", error));
+
   const updateScrollUI = () => {
     const scrollTop = window.scrollY;
     const scrollable = document.documentElement.scrollHeight - window.innerHeight;
@@ -145,13 +204,13 @@
     modalTitle.textContent = "";
   };
 
-  document.querySelectorAll("[data-lightbox]").forEach((trigger) => {
-    trigger.addEventListener("click", () => {
-      openModal({
-        type: "image",
-        src: trigger.dataset.lightbox,
-        caption: trigger.dataset.caption || ""
-      });
+  document.addEventListener("click", (event) => {
+    const trigger = event.target.closest("[data-lightbox]");
+    if (!trigger) return;
+    openModal({
+      type: "image",
+      src: trigger.dataset.lightbox,
+      caption: trigger.dataset.caption || ""
     });
   });
 
