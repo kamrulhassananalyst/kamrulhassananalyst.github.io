@@ -1,0 +1,153 @@
+{
+  "resumeFile": "assets/documents/mohammad-kamrul-hassan-resume-2026-11-03.pdf",
+  "experienceStart": "2017-09-01",
+  "companies": [
+    {
+      "company": "T.K. Group of Industries",
+      "category": "CURRENT",
+      "designation": "MIS & Sales Operations Analyst",
+      "start": "2025-10",
+      "end": null,
+      "summary": "Leading structured sales MIS, performance monitoring and business reporting while developing practical digital solutions that improve visibility across the sales operation.",
+      "details": [
+        {
+          "title": "Core responsibility",
+          "text": "Daily, weekly, monthly and yearly sales MIS covering region, area, territory, SKU, target achievement, primary and secondary sales, orders and expenses."
+        },
+        {
+          "title": "Business contribution",
+          "text": "Analyzing sales gaps, slow-moving products, customer and order performance, reporting exceptions and areas requiring management attention."
+        },
+        {
+          "title": "Established / improved",
+          "text": "Google Forms, Google Sheets and Apps Script-based live reporting workflows, plus a mobile intelligence solution for faster sales monitoring."
+        },
+        {
+          "title": "Tools used",
+          "text": "Advanced Excel, Google Sheets, Google Forms, Apps Script, MIS reporting, sales analysis and business application design."
+        }
+      ],
+      "highlight": {
+        "label": "NEW VALUE ADD",
+        "title": "PPL Business Intelligence & Sales Monitoring App — Developed by MIS Kamrul Hassan",
+        "text": "A mobile business solution developed for T.K. Group to support sales visibility, target tracking, MIS access and faster management monitoring.",
+        "link": "#ppl-app-project",
+        "linkText": "View the solution"
+      },
+      "media": [
+        {
+          "src": "assets/images/projects/ppl-bi-sales-monitoring-app.webp",
+          "alt": "PPL BI Dashboard mobile application login screen",
+          "caption": "PPL Business Intelligence & Sales Monitoring App — developed as a value-added solution for T.K. Group.",
+          "wide": true,
+          "label": "Open app preview"
+        },
+        {
+          "src": "assets/images/career/tk-group/monthly-sales-review.webp",
+          "alt": "Monthly sales review presentation at T.K. Group",
+          "caption": "Monthly sales review presentation at T.K. Group."
+        },
+        {
+          "src": "assets/images/career/tk-group/tk-business-work.webp",
+          "alt": "T.K. Group sales reporting work setup",
+          "caption": "Sales reporting and business monitoring context at T.K. Group."
+        }
+      ]
+    },
+    {
+      "company": "ACI Formulations Limited",
+      "category": "FMCG",
+      "designation": "Senior Business Development Analyst",
+      "start": "2022-11",
+      "end": "2025-01",
+      "summary": "Supported nationwide business performance through sales and commercial analysis, automated dashboards, planning support and cross-functional management reporting.",
+      "details": [
+        {
+          "title": "Core responsibility",
+          "text": "Nationwide primary and secondary sales, region and channel movement, product trends, target achievement, incentive and foreign-trip eligibility analysis."
+        },
+        {
+          "title": "Business contribution",
+          "text": "Identified growth gaps, business risks and performance opportunities while supporting pricing, trade offers, demand planning and management reviews."
+        },
+        {
+          "title": "Key impact",
+          "text": "Resume-reported 35%–55% improvement in reporting efficiency through automated dashboards, structured MIS and faster consolidation workflows."
+        },
+        {
+          "title": "Tools used",
+          "text": "Power BI, Looker Studio, Advanced Excel, Power Query, Google Workspace and management reporting systems."
+        }
+      ],
+      "media": [
+        {
+          "src": "assets/images/career/aci/annual-business-conference-presentation.webp",
+          "alt": "Kamrul presenting at ACI Annual Business Conference",
+          "caption": "Presenting business performance at the ACI Annual Business Conference 2023.",
+          "wide": true,
+          "label": "Annual Business Conference"
+        },
+        {
+          "src": "assets/images/career/aci/annual-business-conference-portrait.webp",
+          "alt": "Kamrul at ACI Annual Business Conference 2023",
+          "caption": "Professional participation at the ACI Annual Business Conference 2023."
+        },
+        {
+          "src": "assets/images/career/aci/aci-recognition.webp",
+          "alt": "Professional recognition at ACI",
+          "caption": "Professional recognition and team engagement at ACI."
+        }
+      ]
+    },
+    {
+      "company": "Kormo Jobs by Google",
+      "category": "DIGITAL PLATFORM",
+      "designation": "Operations & Business Data Analyst",
+      "start": "2017-09",
+      "end": "2022-10",
+      "summary": "Kormo Jobs was a Google product. Managed customer experience and team operations while owning analytics, CRM visibility and most weekly reporting to Google.",
+      "details": [
+        {
+          "title": "Core responsibility",
+          "text": "Operations, marketing campaigns, job matching, billing, CRM activity, customer and candidate tracking, and business performance monitoring."
+        },
+        {
+          "title": "Business contribution",
+          "text": "Prepared regular reporting for Google and management, strengthened process discipline and translated operational activity into measurable visibility."
+        },
+        {
+          "title": "Key impact",
+          "text": "Managed a seven-member team; resume-reported improvements of 29%–35% in operational efficiency and 31%–49% in CRM and lead-management efficiency."
+        },
+        {
+          "title": "Tools used",
+          "text": "Google Data Studio, HubSpot CRM, Google Sheets, Google Forms, Apps Script-supported workflows and executive reporting."
+        }
+      ],
+      "evidence": {
+        "href": "assets/documents/google-kormo-experience-certificate.pdf",
+        "text": "Open Google experience certificate"
+      },
+      "media": [
+        {
+          "src": "assets/images/recognition/google-kormo-experience-certificate.webp",
+          "alt": "Google Kormo experience certificate",
+          "caption": "Experience letter confirming Kamrul Hassan’s work for Kormo Jobs through Google’s local partner.",
+          "wide": true,
+          "label": "Google experience evidence"
+        },
+        {
+          "src": "assets/images/career/kormo/kormo-gold-award-q2-2020.webp",
+          "alt": "Kormo Gold Award second quarter 2020",
+          "caption": "Kormo Gold Award — 2nd Quarter 2020."
+        },
+        {
+          "src": "assets/images/career/kormo/kormo-gold-award-q4-2020.webp",
+          "alt": "Kormo Gold Award fourth quarter 2020",
+          "caption": "Kormo Gold Award — 4th Quarter 2020."
+        }
+      ]
+    }
+  ],
+  "profileImage": "assets/images/hero/kamrul-hassan-profile-2026-11-03.webp"
+}
