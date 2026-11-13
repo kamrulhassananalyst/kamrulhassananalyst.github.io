@@ -141,6 +141,3 @@ Portfolio: https://YOUR-USERNAME.github.io/
 - The PPL app is intentionally positioned as a new value-added solution developed for T.K. Group.
 - The Kormo period shown publicly follows the uploaded Google experience certificate: September 2017 to June 2022.
 - Resume-reported impact ranges are clearly identified as such; no new achievement figures were invented.
-
-## Safe content updates
-See [`UPDATE-GUIDE.md`](UPDATE-GUIDE.md). Resume and profile picture paths, career history, and experience calculation are managed through `data/career.json`. Use a new unique filename for every replacement so older files remain available and no project assets are overwritten.
